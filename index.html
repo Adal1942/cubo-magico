@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo 3D</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsivo.css">
+</head>
+<body>
+    <div id="box">
+        <div class="top"></div>
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <script>
+        let box = document.getElementById('box');
+        window.onmousemove = function(e){
+            box.style.transform = "rotateX(-30deg) rotateY(" 
+            + e.clientX +"deg)"
+        }
+    </script>
+</body>
+</html>
